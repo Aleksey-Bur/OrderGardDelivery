@@ -94,10 +94,10 @@ public class DeliveryCardTest {
         $("[data-test-id='date'] input").setValue(date);
 
         $("[data-test-id='name'] input").setValue("Аркадий Паровозов");
-        $("[data-test-id='phone'] input").setValue("90055577");
+        $("[data-test-id='phone'] input").setValue("9005557");
         $("[data-test-id='agreement']").click();
         $$("button").find(exactText("Забронировать")).click();
-        $("[data-test-id=phone].input_invalid .input__sub").shouldHave(exactText("Телефон указан неверно. Должно быть 11 цифр, например, +79005558888."));
+        $("[data-test-id=phone].input_invalid .input__sub").shouldHave(exactText("Телефон указан неверно. Должно быть 11 цифр, например, +79012345678."));
     }
 
     @Test
