@@ -97,7 +97,7 @@ public class DeliveryCardTest {
         $("[data-test-id='phone'] input").setValue("90055577");
         $("[data-test-id='agreement']").click();
         $$("button").find(exactText("Забронировать")).click();
-        $("[data-test-id=phone].input_invalid .input__sub").shouldHave(exactText("Телефон указан неверно. Должно быть 11 цифр, например, +79005557777."));
+        $("[data-test-id=phone].input_invalid .input__sub").shouldHave(exactText("Телефон указан неверно. Должно быть 11 цифр, например, +79005558888."));
     }
 
     @Test
